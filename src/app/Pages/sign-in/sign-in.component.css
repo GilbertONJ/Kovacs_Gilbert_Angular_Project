@@ -1,0 +1,36 @@
+.bg-container{
+    background-image: url("../../../../src/assets/nick-brunner-96wH9-hzdWY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    color: white;
+    font-family: Ink;
+}
+
+
+.fields{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 3%;
+    font-size: 25px;
+
+}
+
+
+input{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.positioning{
+    margin-top: 5%;
+    display: inline;
+    margin-left: 77%;
+    font-size: 25px;
+}
+
+
+

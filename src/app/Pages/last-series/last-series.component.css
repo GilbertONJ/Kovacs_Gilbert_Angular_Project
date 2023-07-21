@@ -1,0 +1,7 @@
+.bg-container{
+    background-image: url("../../../assets/colorful-mountains-night-minimal-8k-w5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+

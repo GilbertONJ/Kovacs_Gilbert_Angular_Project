@@ -1,0 +1,25 @@
+<div class="bg-container w-100 h-100">
+    <h1  style="text-align: center; color: white; font-size: 74px; margin-top: 60px;">Sign Up</h1>
+    
+    <div class="fields">
+        <form method="GET" [formGroup]="userData">
+            <div class="from-group">
+                <label for="usrename">Username</label><br>
+                <input type="text" id="usrename" name="usrename" placeholder="Choose Your Username" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Choose A Password" formControlName="password">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Write Your Email Address" formControlName="email">
+            </div>
+
+           
+            <button type="button" class="btn btn-primary positioning" style="border-radius: 20px;" (click)="signingUp()">Sign Up</button>
+        
+        </form>
+    </div>
+</div>
