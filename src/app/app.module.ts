@@ -53,4 +53,13 @@ import { CapitalizeFirstPipe } from './Pipe/pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+  constructor(){
+
+    
+   //console.log(localStorage)
+  }
+  
+ }

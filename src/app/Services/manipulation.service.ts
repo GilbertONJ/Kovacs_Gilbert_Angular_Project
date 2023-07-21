@@ -8,6 +8,7 @@ export class ManipulationService {
    title = document.createElement('input');
    opinion = document.createElement('input');
    id =" "
+   globalKey = " "
 
   constructor() { }
 
@@ -15,9 +16,11 @@ export class ManipulationService {
     let content: string | null = localStorage.getItem(key);
     let contentArray: Array<string> | undefined = content?.split(',');
     let div = document.getElementById(id);
+    this.globalKey=key;
 
 
     if (typeof contentArray !== 'undefined') {
+      if(contentArray.length > 2){
       for (let i = 0; i < contentArray.length; i+=2) {
         let table = document.createElement('table');
         let tr = document.createElement('tr');
@@ -38,8 +41,28 @@ export class ManipulationService {
         div?.appendChild(table);
         console.log('Success');
       }
+    }else{
+      let table = document.createElement('table');
+        let tr = document.createElement('tr');
+        let tr_second = document.createElement('tr');
+        let td = document.createElement('td');
+        let th = document.createElement('th');
+
+        th.innerHTML = contentArray[0];
+        td.innerHTML = contentArray[1];
+
+        tr.appendChild(th);
+        tr_second.appendChild(td);
+
+
+        table.appendChild(tr);
+        table.appendChild(tr_second);
+        table.classList.add('opinions');
+        div?.appendChild(table);
+        console.log('Success');
     }
   }
+}
 
 
   adding(nameId: string) {
@@ -97,7 +120,10 @@ export class ManipulationService {
 
     const t =this.title.value;
     const o = this.opinion.value
+    const content: string | null = localStorage.getItem(this.globalKey);
+    const contentArray: Array<string> | undefined = content?.split(',');
 
+if(contentArray && contentArray.length>=2){
     let storageContentString: string | null  = localStorage.getItem(this.id)
     storageContentString+=","+t+","+o
     if(storageContentString){
@@ -107,7 +133,16 @@ export class ManipulationService {
     this.divDelete()
     location.reload()
  
-
   }
+  else{
+    let storageContentString: string | null  = localStorage.getItem(this.id)
+    storageContentString=t+","+o
+    if(storageContentString){
+      localStorage.setItem(this.id,storageContentString)  
+      }
+    this.divDelete()
+    location.reload()
+  }
+}
 
 }
