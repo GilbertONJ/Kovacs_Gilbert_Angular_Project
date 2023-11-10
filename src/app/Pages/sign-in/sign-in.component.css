@@ -25,10 +25,20 @@ input{
     border-radius: 5px;
 }
 
-.positioning{
-    margin-top: 5%;
+.positioningLeft{
+    position: fixed;
+    margin-top: 2%;
     display: inline;
-    margin-left: 77%;
+    margin-left: 20%;
+    font-size: 15;
+
+}
+
+.positioningRight{
+    position: fixed;
+    margin-top: 2%;
+    display: inline;
+    margin-right: 50%;
     font-size: 15;
 }
 

@@ -26,19 +26,19 @@ input{
 }
 
 .positioningLeft{
-    margin-top: 5%;
+    position: fixed;
+    margin-top: 2%;
     display: inline;
-    margin-left: 80%;
-    font-size: 15px;
-    width: 20%;;
+    margin-left: 20.5%;
+    font-size: 15;
 }
 
 .positioningRight{
-    margin-top: 5%;
+    position: fixed;
+    margin-top: 2%;
     display: inline;
-    margin-right: 80%;
-    font-size: 15px;
-    width: 20%;;
+    margin-right: 50%;
+    font-size: 15;
 }
 
 
