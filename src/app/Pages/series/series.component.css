@@ -56,13 +56,12 @@ table {
   }
 
   .buttons{
-    margin: -1% auto;
     text-align: center;
   }
 
   .buttons button{
     width: 15%;
-    font-size: 24px;
+    font-size: 15px;
     background-color: #858B8D;
-    margin-top: 1%;
+    margin-top: 0.5%;
   }
