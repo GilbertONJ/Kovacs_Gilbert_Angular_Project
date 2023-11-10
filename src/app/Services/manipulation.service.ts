@@ -10,7 +10,7 @@ export class ManipulationService {
    id =" "
    globalKey = " "
 
-  constructor() { }
+  constructor() {}
 
   loading(id: string, key: string) {
     let content: string | null = localStorage.getItem(key);
