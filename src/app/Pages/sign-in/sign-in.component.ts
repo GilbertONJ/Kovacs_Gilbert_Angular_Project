@@ -31,4 +31,8 @@ export class SignInComponent {
       this.router.navigateByUrl('/log-in')
     }
   }
+
+  logIn(){
+    this.router.navigateByUrl('/log-in');
+  }
 }

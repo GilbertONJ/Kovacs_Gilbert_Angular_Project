@@ -25,10 +25,18 @@ input{
     border-radius: 5px;
 }
 
-.positioning{
+.positioningLeft{
     margin-top: 5%;
     display: inline;
     margin-left: 80%;
+    font-size: 15px;
+    width: 20%;;
+}
+
+.positioningRight{
+    margin-top: 5%;
+    display: inline;
+    margin-right: 80%;
     font-size: 15px;
     width: 20%;;
 }

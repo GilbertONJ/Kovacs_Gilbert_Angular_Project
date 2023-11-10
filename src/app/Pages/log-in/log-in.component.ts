@@ -29,5 +29,10 @@ export class LogInComponent {
           }
         }
       }
+      
     }
+    signUp(){
+      this.router.navigateByUrl('/sign-in');
+    }
+  
 }

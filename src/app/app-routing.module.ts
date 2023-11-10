@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
+  {path: 'sign-in', loadChildren: () => import('../app/Modules/sign-in/sign-in.module').then(m => m.SignInModule)},
   {path: 'log-in', loadChildren: () => import('../app/Modules/log-in/log-in.module').then(m => m.LogInModule)},
   {path: 'home', loadChildren: () => import('../app/Modules/home/home.module').then(m => m.HomeModule)},
   {path: 'music', loadChildren: () => import('../../src/app/Modules/music/music.module').then (m => m.MusicModule)},
